@@ -39,3 +39,4 @@ string nombre = "C#";
 string ruta = @$"C:\Usuarios\{nombre}\Documentos";  // ruta = "C:\Usuarios\C#\Documentos"
 Este texto formateado en Markdown proporciona una descripción clara de los conceptos mencionados y ejemplos de su uso en C#.
 
+nfkjdhbrgjerhuer
