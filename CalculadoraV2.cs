@@ -20,10 +20,13 @@ class Calculadora
             Console.WriteLine("8. Seno de un número");
             Console.WriteLine("9. Coseno de un número");
             Console.WriteLine("10. Parte entera de un número float");
-            Console.Write("Ingrese una opción (1-10): ");
+            Console.WriteLine("11. Máximo entre dos números");
+            Console.WriteLine("12. Mínimo entre dos números");
+            Console.Write("Ingrese una opción (1-12): ");
             string opcion = Console.ReadLine();
 
-            if (opcion == "1" || opcion == "2" || opcion == "3" || opcion == "4")
+            if (opcion == "1" || opcion == "2" || opcion == "3" || opcion == "4" ||
+                opcion == "11" || opcion == "12")
             {
                 Console.Write("Ingrese el primer número: ");
                 double num1 = Convert.ToDouble(Console.ReadLine());
@@ -57,6 +60,14 @@ class Calculadora
                         {
                             Console.WriteLine("Error: No se puede dividir entre cero.");
                         }
+                        break;
+                    case "11":
+                        resultado = Math.Max(num1, num2);
+                        Console.WriteLine($"El máximo entre {num1} y {num2} es: {resultado}");
+                        break;
+                    case "12":
+                        resultado = Math.Min(num1, num2);
+                        Console.WriteLine($"El mínimo entre {num1} y {num2} es: {resultado}");
                         break;
                 }
             }
@@ -96,7 +107,7 @@ class Calculadora
             }
             else
             {
-                Console.WriteLine("Opción no válida. Por favor seleccione una opción del 1 al 10.");
+                Console.WriteLine("Opción no válida. Por favor seleccione una opción del 1 al 12.");
             }
 
             Console.Write("¿Desea realizar otra operación? (s/n): ");
